@@ -1,12 +1,18 @@
 <?php
 
 class Connection {
-    private $host = 'localhost';
-    private $db = 'taxis_app';
-    private $user = 'root';
-    private $pass = 'taxis2026';
-    private $charset = 'utf8mb4';
+private $host;
+private $db;
+private $user;
+private $pass;
+private $charset = 'utf8mb4';
 
+public function __construct() {
+    $this->host = getenv('DB_HOST') ?: 'localhost';
+    $this->db   = getenv('DB_NAME') ?: 'taxis_app';
+    $this->user = getenv('DB_USER');
+    $this->pass = getenv('DB_PASS');
+}
     public function getConnection() {
         $dsn = "mysql:host=$this->host;dbname=$this->db;charset=$this->charset";
         try {
