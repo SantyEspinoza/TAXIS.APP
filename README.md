@@ -1,7 +1,7 @@
 # TAXIS.APP 
 Proyecto escolar sistema web para registrar solicitudes de servicio de taxi.
 
-## ecnologías
+## Tecnologías
 - PHP 8 + MySQL
 - Apache 2 (Ubuntu 22.04 - Oracle Cloud)
 - HTML5, CSS3, JavaScript
@@ -13,7 +13,7 @@ Proyecto escolar sistema web para registrar solicitudes de servicio de taxi.
 - `conexion2.php` — Conexión PDO a MySQL
 - `listado.php` — Panel de consulta con búsqueda
 
-## uncionalidades
+## Funcionalidades
 - Formulario con validación JS
 - Registro en MySQL (CREATE)
 - Listado con búsqueda (READ)
